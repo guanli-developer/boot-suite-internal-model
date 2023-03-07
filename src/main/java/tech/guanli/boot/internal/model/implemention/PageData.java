@@ -1,7 +1,6 @@
 package tech.guanli.boot.internal.model.implemention;
 
 import java.util.Collection;
-import java.util.Objects;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,7 +17,7 @@ public class PageData<T extends Returnable> implements Returnable {
 
 	private Long total;
 
-	private Integer totalPage;
+	private Long totalPage;
 
 	private Integer pageNumber;
 
@@ -26,11 +25,4 @@ public class PageData<T extends Returnable> implements Returnable {
 
 	private Collection<T> data;
 
-	public Integer getTotalPage() {
-		if (Objects.isNull(totalPage)) {
-			return Long.valueOf(total % pageSize > 0 ? total / pageSize + 1 : total / pageSize).intValue();
-		} else {
-			return totalPage;
-		}
-	}
 }
