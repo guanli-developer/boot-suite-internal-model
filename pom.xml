@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>tech.guanli.boot.suite</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.0.4-RELEASE</version>
+		<version>1.0.5-RELEASE</version>
 	</parent>
 	<artifactId>internal-model</artifactId>
-	<version>1.0.3-RELEASE</version>
+	<version>1.0.4-RELEASE</version>
 	<scm>
 		<url>https://github.com/guanli-developer/boot-suite-internal-model</url>
 		<connection>
