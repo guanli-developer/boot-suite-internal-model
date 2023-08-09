@@ -13,6 +13,10 @@ import java.io.Serializable;
  */
 public interface Hereditable<ID extends Serializable> {
 
+	ID getId();
+
+	void setId(ID id);
+
 	ID getParentId();
 
 	void setParentId(ID id);

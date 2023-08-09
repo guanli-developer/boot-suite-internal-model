@@ -15,10 +15,6 @@ import java.util.Objects;
  */
 public interface Nestable<ID extends Serializable, Child extends Nestable<ID, Child>> extends Hereditable<ID> {
 
-	ID setId();
-
-	void setId(ID id);
-
 	List<Child> getChildren();
 
 	void setChildren(List<Child> children);
